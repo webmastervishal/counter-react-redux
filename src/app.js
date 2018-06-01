@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
 import './styles/styles.css';
-import reactImg from './images/react.png';
 
-const jsx = (
-    <div>
-        <img src={reactImg} />
-        <h1>React & Node Boilerplate</h1>
-        <p>Ready to use with webpack & babel pre-configured.</p>
-    </div>
+import store from './store';
+import AppRoutes from './routes';
+
+ReactDOM.render(
+    <Provider store={store}>
+        <AppRoutes />
+    </Provider>,
+    document.getElementById('root')
 );
-
-ReactDOM.render(jsx,document.getElementById('root'));

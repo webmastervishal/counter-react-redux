@@ -10,9 +10,6 @@ html {
     font-size: 25px;
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./../images/background.jpg');
-    color: #ffffff;
     text-align: center;
 }
 
@@ -28,4 +25,21 @@ p {
     margin-top: 10px;
     font-size: 80%;
     font-weight: 300;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #2f5bb7;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a {
+    font-size: 80%;
+    margin: 30px 10px;
+    text-decoration: none;
+    display: inline-block;
 }
